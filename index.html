@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials grid section | Mohamed </title>
+  <style>
+    *{
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: hsl(210, 46%, 95%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 100px;
+    }
+    
+    main {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1250px;
+      gap: 30px;
+    }
+
+    section{
+      border-radius: 10px;
+    }
+
+    .person {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    .person img {
+      width: 35px;
+      border-radius: 35px;
+      border: solid rgb(155, 155, 155) 2px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .name {
+      color: white;
+      font-size: 13px;
+    }
+
+    .verified {
+      color: rgba(255, 255, 255, 0.61);
+      font-size: 10px;
+    }
+
+    .title {
+      color: white;
+      font-weight: bold;
+      font-size: 19px;
+      margin-top: 27px;
+      z-index: 2;
+    }
+
+    .testimonials {
+      color: rgba(255, 255, 255, 0.61);
+      font-size: 13px;
+      margin-top: 25px;
+      line-height: 22px;
+    }
+
+    .section-one {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: hsl(263, 55%, 52%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .quotes {
+      top: 2px;
+      right: 100px;
+      position: absolute;
+      max-width: 120px;
+    }
+
+    .section-two {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: hsl(217, 19%, 35%);
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .section-three {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .section-four {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: hsl(219, 29%, 14%);
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .section-five {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    @media (max-width: 1000px) {
+      body main {
+      display: flex;
+      flex-direction: column;
+      max-width: 1250px;
+      min-width: 400px;
+      gap: 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <section class="section-one">
+      <img class="quotes" src="assets\bg-pattern-quotation.svg">
+      <div class="person">
+        <img src="assets\image-daniel.jpg">
+        <div class="info">
+          <div class="name">Daniel Clifford</div>
+          <div class="verified">Verified Graduate</div>
+        </div>
+      </div>
+      <div class="title">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
+      </div>
+      <div class="testimonials">
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="person">
+        <img src="assets\image-jonathan.jpg">
+        <div class="info">
+          <div class="name">Jonathan Walters</div>
+          <div class="verified">Verified Graduate</div>
+        </div>
+      </div>
+      <div class="title">
+        The team was very supportive and kept me motivated
+      </div>
+      <div class="testimonials">
+        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”
+      </div>
+    </section>
+    <section class="section-three">
+      <div class="person">
+        <img src="assets\image-jeanette.jpg">
+        <div class="info">
+          <div class="name" style="color: black;">Jeanette Harmon</div>
+          <div class="verified" style="color: rgba(0, 0, 0, 0.589);">Verified Graduate</div>
+        </div>
+      </div>
+      <div class="title" style="color: black;">
+        An overall wonderful and rewarding experience
+      </div>
+      <div class="testimonials" style="color: rgba(0, 0, 0, 0.589);">
+        “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
+      </div>
+    </section>
+    <section class="section-four">
+      <div class="person">
+        <img src="assets\image-patrick.jpg">
+        <div class="info">
+          <div class="name">Patrick Abrams</div>
+          <div class="verified">Verified Graduate</div>
+        </div>
+      </div>
+      <div class="title">
+        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.
+      </div>
+      <div class="testimonials">
+        “ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”
+      </div>
+    </section>
+    <section class="section-five">
+      <div class="person">
+        <img src="assets\image-kira.jpg">
+        <div class="info">
+          <div class="name" style="color: black;">Kira Whittle</div>
+          <div class="verified" style="color: rgba(0, 0, 0, 0.589);">Verified Graduate</div>
+        </div>
+      </div>
+      <div class="title" style="color: black;">
+        Such a life-changing experience. Highly recommended!
+      </div>
+      <div class="testimonials" style="color: rgba(0, 0, 0, 0.589);" >
+        “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”
+      </div>
+    </section>
+  </main>
+  <div>Challenge by <a href="https://www.frontendmentor.io/home">Frontend Mentor.</a> Coded by. <a href="">Mohamed.</a></div>
+</body>
+</html>
